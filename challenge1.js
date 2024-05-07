@@ -4,13 +4,30 @@
  * - that just prints your name on the screen
  */
 
+function printName(){
+    console.log("Ziad")
+}
+
+printName()
+
+
+
 /**
  * Task 2:
  * Create a function named `printAge`
  * - that takes a birth year as a parameter,
  * - and prints the age on the screen.
  * - Age = current year - birth
- */
+ */ 
+
+function printAge(yob){
+   console.log(2024-yob)
+  
+}
+
+printAge(1999)
+
+
 
 /**
  * Task 3:
@@ -21,11 +38,40 @@
  * -- es: it should print `Hola NAME`
  * -- fr: it should print `Bonjour NAME`
  * -- tr: it should print `Merhaba NAME`
- */
+ */ 
+
+ function printHello(name,language){
+   if (language == "en")  {
+      console.log(`Hello ${name}`);
+   } 
+    else if (language == "es")  {
+      console.log(`Hola ${name}`);  
+    }
+    else if (language == "fr") {
+      console.log(`Bonjour ${name}`);  
+    }
+    else if (language == "tr") {
+      console.log(`Merhaba ${name}`)  
+    }   
+ }
+
+ printHello("Ziad" , "fr")
 
 /**
  * Task 4:
  * Create a function named `printMax`
  * - that takes 2 parameters as numbers
  * - should print out the bigger number
- */
+ */ 
+
+
+function printMax(x, y){
+   if (x > y) {
+      console.log(x)
+   }
+   else {console.log (y)}
+   
+}
+  
+
+ printMax(1,2)
